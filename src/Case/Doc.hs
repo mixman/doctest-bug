@@ -16,6 +16,18 @@ newtype Login = Login Text
 
 deriveLift ''Login
 
+-- | GroupName name. @[a-zA-Z0-9 _.-]+@.
+newtype GroupName = GroupName Text
+  deriving (Eq, Ord)
+
+deriveLift ''GroupName
+
+instance Show GroupName where
+    showsPrec _ (GroupName l)
+        = showString "$(mkGroupName "
+        . showsPrec 11 l
+        . showString ")"
+
 -- | Login's regular expression.
 --
 -- >>> K.putPretty loginKleene

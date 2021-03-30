@@ -16,7 +16,7 @@ docker run -v $(pwd):/doctest -w /doctest -t -i --rm ubuntu:16.04 bash
 
 Inside the container:
 ```
-apt-get install build-essential curl libffi-dev libffi6 libgmp-dev libgmp10 libncurses-dev libncurses5 libtinfo5
+apt-get install build-essential curl libffi-dev libffi6 libgmp-dev libgmp10 libncurses-dev libncurses5 libtinfo5 zlib1g-dev
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 source /root/.ghcup/env
 cabal install doctest

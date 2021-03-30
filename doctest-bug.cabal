@@ -29,12 +29,17 @@ library
     DeriveTraversable
     ScopedTypeVariables
   build-depends:       base >=4.14 && <4.15
+    , colour
+    , deepseq              ^>=1.4.1.1
+    , hashable             ^>=1.3.0.0
+    , JuicyPixels          >=3.2.7 && <3.4
     , kleene
     , template-haskell
     , text
-    , th-lift                    ^>=0.8
+    , th-lift              ^>=0.8
   exposed-modules:
     Case.Doc
+    Case.Colour
 
 executable doctest-bug
   main-is:             Main.hs
