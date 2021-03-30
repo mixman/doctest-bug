@@ -5,7 +5,7 @@ language: c
 # Build only master (and PRs to master)
 branches:
   only:
-  - master
+  - main
   submodules: false
 
 # Services for integration tests
