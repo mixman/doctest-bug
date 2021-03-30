@@ -37,9 +37,6 @@ prepare)
 
 install)
 
-    # common data
-    make copy-samples
-
     case $BUILD in
     cabal)
         # Install doctest
