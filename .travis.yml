@@ -8,10 +8,6 @@ branches:
   - main
   submodules: false
 
-# Services for integration tests
-services:
-  - postgresql
-
 # Caching so the next build will be fast too.
 cache:
   directories:
